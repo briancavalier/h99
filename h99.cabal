@@ -1,0 +1,20 @@
+name:                h99
+version:             0.1.0.0
+synopsis:            H-99
+license:             MIT
+license-file:        LICENSE
+author:              Brian Cavalier
+maintainer:          brian@hovercraftstudios.com
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  build-depends:       base >=4.7 && <4.8
+  default-language:    Haskell2010
+
+test-suite doctest
+    default-language:  Haskell2010
+    hs-source-dirs:    test
+    main-is:           doctest.hs
+    type:              exitcode-stdio-1.0
+    build-depends:     base, Glob ==0.7.*, doctest ==0.9.*
